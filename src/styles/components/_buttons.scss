@@ -1,0 +1,40 @@
+button,
+div.btn {
+  font-family: IBMPlexMono-Medium;
+  font-size: 16px;
+  color: $color-quarter;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  height: 48px;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.btn-blue {
+    background: $color-secundary;
+    &:hover {
+      background: $button-bg-over;
+      color: white;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &.btn-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+div.btn {
+  display: inline-block;
+  cursor: pointer;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}

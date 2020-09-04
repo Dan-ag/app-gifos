@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+
+  font-family: IBMPlexMono;
+  font-size: 14px;
+
+  color: $blue-800;
+  letter-spacing: 0;
+  line-height: 22px;
+
+  position: relative;
+  box-sizing: border-box;
+}
+
+h1 {
+  color:red;
+  margin: 0;
+  font-family: IBMPlexSans;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: 400;
+  @include media-breakpoint-up(xl) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  margin: 0;
+  font-family: IBMPlexMono;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+p {
+  margin: 0;
+  font-family: IBMPlexMono;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: unset;
+}
+
+section {
+  display: block;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include media-breakpoint-up(sm) {
+    @include padding-section($paddin-section-sm);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include padding-section($paddin-section-md);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include padding-section($paddin-section-lg);
+  }
+
+  @include media-breakpoint-up(xl) {
+    @include padding-section($paddin-section-xl);
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}

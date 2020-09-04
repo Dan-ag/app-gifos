@@ -1,0 +1,61 @@
+@mixin section-skewy-top($color: #000, $height: 25px) {
+  $el: before;
+
+  // padding-top: #{$height - 5px};
+  &:#{ $el } {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-bottom: calc(#{$height} + 1px) solid transparent;
+    border-left: 100vw solid $color;
+    @content;
+  }
+}
+
+@mixin section-skewy-bottom($color: #000, $height: 25px) {
+  $el: after;
+  &:#{ $el } {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    border-bottom: calc(#{$height} + 1px) solid $color;
+    border-left: 100vw solid transparent;
+    @content;
+  }
+}
+
+// Grid
+@mixin column-system-generater($numCol, $breakpoint: false) {
+  $class: col;
+
+  @if $breakpoint {
+    $class: col-#{$breakpoint};
+  }
+
+  @for $i from 0 through $numCol {
+    .#{$class}-#{$i} {
+      display: flex;
+      flex-direction: column;
+      flex-basis: calc((100% / #{$numCol}) * #{$i});
+      box-sizing: border-box;
+    }
+  }
+}
+
+@mixin glutter($margin, $numCol, $col) {
+  &.glutter {
+    margin: -#{$margin/2}px; // Genera glip en los navagadores
+    & > * {
+      flex-basis: calc((100% / #{$numCol}) * #{$col} - #{$margin}px);
+      margin: #{$margin/2}px;
+    }
+  }
+}
+
+// Sections
+@mixin padding-section($padding) {
+  padding-left: $padding;
+  padding-right: $padding;
+}

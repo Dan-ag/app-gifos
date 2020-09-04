@@ -1,0 +1,34 @@
+/*!
+ * IBM Plex™ is an international typeface family designed by Mike Abbink, IBM BX&D, in collaboration with Bold Monday, an independent Dutch type foundry - https://fonts.google.com/specimen/IBM+Plex+Sans?preview.text=&preview.text_type=custom&selection.family=IBM+Plex+Sans#standard-styles
+ * License - https://fonts.google.com/specimen/IBM+Plex+Mono?selection.family=IBM+Plex+Mono:wght@400;500|IBM+Plex+Sans:wght@400;600&query=IBM+Plex+mono&sidebar.open#license (Fonts: SIL Open Font License (OFL), Code: MIT License)
+ */
+ // IBM Plex Mono
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("../assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("../assets/fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+/*!
+ * IBM Plex™ is an international typeface family designed by Mike Abbink, IBM BX&D, in collaboration with Bold Monday, an independent Dutch type foundry - https://fonts.google.com/specimen/IBM+Plex+Sans?preview.text=&preview.text_type=custom&selection.family=IBM+Plex+Sans#standard-styles
+ * License - https://fonts.google.com/specimen/IBM+Plex+Sans?preview.text=&preview.text_type=custom&selection.family=IBM+Plex+Sans#license (Fonts: SIL Open Font License (OFL), Code: MIT License)
+ */
+ // IBM Plex Sans
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+

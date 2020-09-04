@@ -1,0 +1,81 @@
+#music {
+  @include section-skewy-top(white, 44px);
+  @include section-skewy-bottom(white, 44px);
+  padding: 70px 0px 130px;
+  margin-bottom: -100px;
+  overflow: hidden;
+
+  .tittle {
+    padding: 0px 16px;
+    margin-bottom: 21px;
+
+    @include media-breakpoint-up(sm) {
+      @include padding-section($paddin-section-sm);
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 26px;
+      @include padding-section($paddin-section-md);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include padding-section($paddin-section-lg);
+    }
+
+    @include media-breakpoint-up(xl) {
+      @include padding-section($paddin-section-xl);
+    }
+  }
+
+  .iframes-content {
+    padding: 0px 11px;
+    width: 100%;
+
+    .iframe-container {
+      border: 0px solid transparent;
+      border-radius: 10px;
+      margin-bottom: 11px;
+      overflow: hidden;
+      height: 235px;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include media-breakpoint-up(md) {
+        height: 232px;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      @include padding-section($paddin-section-sm);
+    }
+
+    @include media-breakpoint-up(md) {
+      @include padding-section($paddin-section-md);
+      @include glutter(72, 12, 6);
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 24px;
+      @include padding-section(100px);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    @include section-skewy-top(white, 75px);
+    @include section-skewy-bottom(white, 75px);
+
+    padding: 100px 0px 160px;
+    margin-bottom: -100px;
+  }
+  @include media-breakpoint-up(xl) {
+    @include section-skewy-top(white, 150px);
+    @include section-skewy-bottom(white, 150px);
+
+    padding: 180px 0px 280px;
+    margin-bottom: -200px;
+  }
+}

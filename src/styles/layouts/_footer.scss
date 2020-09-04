@@ -1,0 +1,35 @@
+footer {
+  margin-top: 24px;
+  padding: 0 45px 24px 45px;
+  .brand-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      cursor: pointer;
+      svg {
+        margin: 0 16px;
+
+        &:hover {
+          color: #00f3bb;
+        }
+      }
+    }
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: 36px;
+    padding: 0 45px 31px 42px;
+  }
+}

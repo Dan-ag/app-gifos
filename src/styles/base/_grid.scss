@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+
+  @include column-system-generater(12);
+
+  @include media-breakpoint-up(sm) {
+    @include column-system-generater(12, sm);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include column-system-generater(12, md);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include column-system-generater(12, lg);
+  }
+
+  @include media-breakpoint-up(xl) {
+    @include column-system-generater(12, xl);
+  }
+}

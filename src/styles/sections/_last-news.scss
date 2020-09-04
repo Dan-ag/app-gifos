@@ -1,0 +1,21 @@
+#last-news {
+  padding-top: 85px !important;
+  padding-bottom: 64px;
+
+  @include section-skewy-top(white, 55px);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  @include media-breakpoint-up(md) {
+    @include section-skewy-top(white, 150px);
+    padding-top: 225px !important;
+    padding-bottom: 151px;
+
+    .btn{
+      min-width: 345px;
+    }
+  }
+}

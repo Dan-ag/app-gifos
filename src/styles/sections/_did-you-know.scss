@@ -1,0 +1,38 @@
+.did-you-know {
+  margin-bottom: 54px;
+
+  .img-family-container {
+    margin-bottom: 27px;
+    img {
+      border-radius: 60px;
+      box-shadow: 1px 22px 74px -28px #000000;
+    }
+  }
+
+  h1 {
+    margin-bottom: 8px;
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 16px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 24px;
+    }
+  }
+
+  p {
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+
+  #did-you-know {
+    &:before {
+      display: block;
+      content: ' ';
+      margin-top: -44px;
+      height: 90px;
+      visibility: hidden;
+    }
+  }
+}
